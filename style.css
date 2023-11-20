@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.maindiv {
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.bg {
+    background-image: url('bg.jpg');
+    height: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.men {
+    background-image: url('men.jpg');
+    height: 122px;
+    width: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}
+
+.fighter {
+    background-image: url('fighter.jpg');
+    height: 131px;
+    width: 74px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 500px;
+}
+
+.gameOver {
+    visibility: hidden;
+    height: 14vh;
+    font-size: 79px;
+    width: 37vw;
+    left: 32vw;
+    position: absolute;
+    top: 39vh;
+    border: 3px solid;
+
+}
+
+.h1{
+    width: 620px;
+    border: 2px solid;
+    color: black;
+    font-family: monospace;
+    border-radius: 44px;
+    position: absolute;
+    left: 26vw;
+    top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scoreC{
+    width: 209px;
+    font-size: 32px;
+    border: 2px solid;
+    position: absolute;
+    left: 83vw;
+    top: 1vh;
+}
+
+.jumpmen {
+    animation: mens 0.8s linear;
+}
+
+@keyframes mens {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 222px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.fighterMoves {
+    animation: fighterMoves 5s linear infinite;
+}
+
+@keyframes fighterMoves {
+    0% {
+        left: 100vw
+    }
+
+    100% {
+        left: -30vw;
+    }
+}
